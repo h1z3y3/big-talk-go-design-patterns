@@ -2,10 +2,12 @@ package simplefactory
 
 import "fmt"
 
+// 1. 定义一个接口类型，子类必须实现GoResult方法来实现该接口
 type Operation interface {
 	GetResult(a float64, b float64) (float64, error)
 }
 
+// 2. 初始化工厂类方法，传入操作符，返回对应的类
 func NewOperation(oper string) Operation {
 	switch oper {
 	case "+":
