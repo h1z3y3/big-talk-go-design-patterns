@@ -35,7 +35,8 @@ type TShirtDecorator struct {
 }
 
 func (t *TShirtDecorator) Show() {
-	t.Person.Show()
+	t.Person.Show() // 调用父类的 Show() 方法
+	// "装饰": 增加自己特有的属性
 	fmt.Print(fmt.Sprintf("Color: %s, TShirt; ", t.Color))
 }
 
