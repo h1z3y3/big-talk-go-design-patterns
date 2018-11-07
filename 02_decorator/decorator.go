@@ -6,6 +6,7 @@ type Person interface {
 	Show()
 }
 
+// 具体实现
 type ConcreteComponent struct {
 }
 
