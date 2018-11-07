@@ -13,6 +13,20 @@ func (c *ConcreteComponent) Show() {
 	fmt.Print("A Person wears sunglasses; ")
 }
 
+// 男人
+type Man struct{}
+
+func (m *Man) Show() {
+	fmt.Print("A man wear a hat!")
+}
+
+// 女人
+type Woman struct{}
+
+func (w *Woman) Show() {
+	fmt.Print("A woman wear a skirt!")
+}
+
 // TShirt
 type TShirtDecorator struct {
 	Person
