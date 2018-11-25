@@ -1,7 +1,7 @@
 package decorator
 
 func ExampleConcrete_Wear() {
-	var p Person = &ConcreteComponent{}
+	var p Person = &PersonConcreteComponent{}
 	p = WearTShirt(p, "Blue")
 	p = WearPants(p, 100)
 	p = WearShoes(p, 42)
