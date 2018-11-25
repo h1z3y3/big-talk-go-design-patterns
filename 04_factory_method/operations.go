@@ -7,6 +7,7 @@ type Operation interface {
 	GetResult() (float64, error)
 }
 
+// 运算基类，实现公共的方法
 type OperationBase struct {
 	a float64
 	b float64
@@ -20,6 +21,7 @@ func (oper *OperationBase) SetB(b float64) {
 	oper.b = b
 }
 
+// 加法运算
 type AddOperation struct {
 	*OperationBase
 }
@@ -28,6 +30,7 @@ func (oper *AddOperation) GetResult() (float64, error) {
 	return oper.a + oper.b, nil
 }
 
+// 减法运算
 type SubOperation struct {
 	*OperationBase
 }
@@ -36,6 +39,7 @@ func (oper *SubOperation) GetResult() (float64, error) {
 	return oper.a - oper.b, nil
 }
 
+// 乘法元算
 type MulOperation struct {
 	*OperationBase
 }

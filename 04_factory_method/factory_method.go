@@ -1,10 +1,11 @@
 package factory_method
 
-// 工厂
+// 工厂类
 type OperationFactory interface {
 	CreateOperation() Operation
 }
 
+// 加法工厂
 type AddFactory struct {
 }
 
@@ -14,6 +15,7 @@ func (f *AddFactory) CreateOperation() Operation {
 	}
 }
 
+// 减法工厂
 type SubFactory struct {
 }
 
@@ -23,6 +25,7 @@ func (f *SubFactory) CreateOperation() Operation {
 	}
 }
 
+// 乘法工厂
 type MulFactory struct {
 }
 
