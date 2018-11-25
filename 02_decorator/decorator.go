@@ -6,11 +6,11 @@ type Person interface {
 	Show()
 }
 
-// 具体实现
-type ConcreteComponent struct {
+// Person interface 的具体实现
+type PersonConcreteComponent struct {
 }
 
-func (c *ConcreteComponent) Show() {
+func (c *PersonConcreteComponent) Show() {
 	fmt.Print("A Person wears sunglasses; ")
 }
 
