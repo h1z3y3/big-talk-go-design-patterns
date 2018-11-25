@@ -1,5 +1,6 @@
 package proxy
 
+// 接口，代理类和真实类都要实现
 type Image interface {
 	Get() string
 }
