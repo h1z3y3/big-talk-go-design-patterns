@@ -14,7 +14,7 @@ func NewContext(strategy Strategy) *Context {
 }
 
 func (c *Context) GetResult(a float64, b float64) (float64, error) {
-	return c.GetResult(a, b)
+	return c.strategy.GetResult(a, b)
 }
 
 // 策略接口

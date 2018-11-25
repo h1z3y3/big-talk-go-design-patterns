@@ -11,7 +11,7 @@ func TestAdd_GetResult(t *testing.T) {
 	a = 1
 	b = 3
 	r, _ := ctx.GetResult(a, b)
-	if r != a-b {
+	if r != a+b {
 		t.Fatal("operationSub test error")
 	}
 }
